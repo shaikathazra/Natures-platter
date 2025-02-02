@@ -16,32 +16,70 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+   
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
+
+    <style>
+        .sora-normal {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+    </style>
 
 </head>
 <body>
     <header>
         <!-- navbar -->
-        <div>
+        <div class="container mx-auto px-5 lg:px-0 flex items-center justify-between .sora-normal py-4 border-b-2 border-[#179800]
+        lg:border-b-0">
             <!-- logo -->
              <div>
                 <img src="./assets/logo-header.png" alt="">
              </div>
              <!-- menu -->
               <div>
-                <ul>
+                <ul class="lg:flex gap-8 text-xl hidden">
                     <li><a href="">Product</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Contact us</a></li>
                 </ul>
               </div>
               <!-- icon and button -->
-               <div>
+               <div class="lg:flex gap-4 text-xl items-center hidden">
                 <i class="fi fi-rr-search"></i>
                 <i class="fi fi-rs-shopping-cart"></i>
-                <button>Login</button>
-                <button>Register</button>
+                <button class="py-2 px-8 border-2 bg-transparent rounded-lg border-[#179800]">Login</button>
+                <button class="py-2 px-8 border-2 bg-[#179800] rounded-lg border-[#179800] text-white">Register</button>
                </div>
+               <!-- mobile menu -->
+                <div class="lg:hidden block">
+                    <i class="fi fi-br-menu-burger text-[#179800]"></i> 
+                </div>
         </div>
         <!-- banner -->
          <div>
